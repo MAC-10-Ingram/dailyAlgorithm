@@ -18,7 +18,6 @@ public class BJ1699_SumOfSquare {
 			
 			for(int j = 1; i - (j * j) >= 0; j++) {
 				if(dp[i] > dp[i - (j * j)] + 1) dp[i] = dp[i - j * j] + 1;
-				
 			}
 		}
 		System.out.println(dp[N]);
